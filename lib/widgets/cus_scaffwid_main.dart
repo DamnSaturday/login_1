@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'b_nav.dart';
 
 class CustomScaffoldWidgetMain extends StatelessWidget {
-  const CustomScaffoldWidgetMain({super.key, this.child});
+  const CustomScaffoldWidgetMain({
+    Key? key,
+    this.child,
+  }) : super(key: key);
 
   final Widget? child;
 
@@ -16,10 +20,12 @@ class CustomScaffoldWidgetMain extends StatelessWidget {
       extendBodyBehindAppBar: true,
       body: Stack(
         children: [
-          Image.asset('assets/images/psy2.jpg',
+          Image.asset(
+            'assets/images/psy5.jpg',
             fit: BoxFit.cover,
             width: double.infinity,
-            height: double.infinity,),
+            height: double.infinity,
+          ),
           SafeArea(
             child: child!,
           ),

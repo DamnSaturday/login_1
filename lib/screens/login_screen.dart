@@ -43,9 +43,9 @@ class _LoginScreenState extends State<LoginScreen> {
             flex: 7,
             child: Container(
               padding: const EdgeInsets.all(20),
-              margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 25),
+              margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 5),
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.98),
+                color: Colors.white.withOpacity(0.9),
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(40.0),
                   topRight: Radius.circular(40.0),
