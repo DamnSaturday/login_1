@@ -42,7 +42,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 30),
           margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 5),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.9),
+            color: Colors.white.withOpacity(0.98),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Column(
