@@ -46,7 +46,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
               ),
             ),
             Container(
-              color: Colors.red,
+              color: Colors.transparent,
               child: const Center(
                 child: Text('Page 2'),
               ),

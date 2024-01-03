@@ -11,9 +11,10 @@ class HomeScreen extends StatelessWidget {
         overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
 
     return Scaffold(
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
         title: const Text('Student Portal'),
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
         // You can add actions or other app bar properties here
       ),
       body: Center(
