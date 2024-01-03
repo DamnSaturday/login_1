@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "120464718455",
+    "project_id": "logincheck-826e3",
+    "storage_bucket": "logincheck-826e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120464718455:android:83a72300947f140ef9a472",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaqGDvCHhMPoA-88PERAq4TNerB5qE8SU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
