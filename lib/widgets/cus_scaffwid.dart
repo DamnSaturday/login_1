@@ -16,7 +16,7 @@ class CustomScaffoldWidget extends StatelessWidget {
       extendBodyBehindAppBar: true,
       body: Stack(
         children: [
-          Image.asset('assets/images/psy1.jpg',
+          Image.asset('assets/images/psy4.jpg',
             fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,),
