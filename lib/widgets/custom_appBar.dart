@@ -15,26 +15,37 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         onPressed: () {},
       ),
       title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          Row(
+            children: [
+              Image.asset(
+                'assets/images/logo.png',
+                height: 40,
+                width: 40,
+              ),
+              const SizedBox(width: 0),
           Image.asset(
-            'assets/images/logo.png',
-            height: 30,
-            width: 30,
+            'assets/images/L_text.png',
+            height: 50,
+            width: 50,
+          ),
+            ],
           ),
           const SizedBox(width: 8),
           const Text(
             'Dennis Bortey Bortier',
             style: TextStyle(
               color: Color(0xFF821538),
-              fontSize: 20,
+              fontSize: 18,
             ),
           ),
         ],
       ),
       actions: <Widget>[
         IconButton(
-          icon: const Icon(Icons.notifications_none),
-          iconSize: 24,
+          icon: const Icon(Icons.person_rounded),
+          iconSize: 34,
           color: const Color(0xFF821538),
           onPressed: () {},
         ),

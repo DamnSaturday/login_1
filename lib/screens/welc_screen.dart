@@ -53,6 +53,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 height: 100,
                 width: 100,
               ),
+              Image.asset(
+                'assets/images/L_text.png',
+                height: 100,
+                width: 100,
+              ),
               const SizedBox(height: 80),
               RichText(
                 textAlign: TextAlign.center,
