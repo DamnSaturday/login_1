@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:login/features/user_auth/firebase_auth_implementation/firebase_auth_services.dart';
 import 'package:login/screens/my_dashBoard_screen.dart';
@@ -28,8 +29,11 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
+
+
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
     return CustomScaffoldWidget(
       child: Column(
         children: [
@@ -231,7 +235,13 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
   void _signIn() async {
-    String email = _id_emailController.text;
+    Future.delayed(const Duration(seconds: 4), () {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) => const MyDashboardScreen()),
+      );
+    });
+  }
+    /*String email = _id_emailController.text;
     String password = _passwordController.text;
 
     if (_formLoginKey.currentState!.validate()) {
@@ -274,6 +284,6 @@ class _LoginScreenState extends State<LoginScreen> {
         const SnackBar(content: Text('Invalid Inputs')),
       );
     }
-  }
+  }*/
 }
 

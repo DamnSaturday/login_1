@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:login/screens/home_screen.dart';
 import 'package:login/screens/welc_screen.dart';
@@ -28,6 +29,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: SizedBox.expand(
@@ -63,6 +65,18 @@ class _BottomNavigationState extends State<BottomNavigation> {
                 child: Text('Page 4'),
               ),
             ),
+            Container(
+              color: Colors.deepOrangeAccent,
+              child: const Center(
+                child: Text('Page 5'),
+              ),
+            ),
+            Container(
+              color: Colors.lightBlueAccent,
+              child: const Center(
+                child: Text('Page 6'),
+              ),
+            ),
           ],
         ),
       ),
@@ -80,24 +94,33 @@ class _BottomNavigationState extends State<BottomNavigation> {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
             child: GNav(
-              gap: 8,
+              gap: 3,
+              color: Colors.white,
               activeColor: const Color(0xFF821538),
               iconSize: 24,
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               duration: const Duration(milliseconds: 400),
               tabBackgroundColor: Colors.white,
               tabs: const [
                 GButton(
-                  icon: Icons.home,
-                  text: 'Home',
+                  icon: Icons.dashboard,
+                  text: 'Dashboard',
                 ),
                 GButton(
-                  icon: Icons.favorite_border,
-                  text: 'Likes',
+                  icon: Icons.school,
+                  text: 'Academics',
                 ),
                 GButton(
-                  icon: Icons.search,
-                  text: 'Search',
+                  icon: Icons.payment,
+                  text: 'Account',
+                ),
+                GButton(
+                  icon: Icons.group,
+                  text: 'Community',
+                ),
+                GButton(
+                  icon: Icons.person,
+                  text: 'Profile',
                 ),
                 GButton(
                   icon: Icons.settings,

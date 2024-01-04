@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-import 'b_nav.dart';
+import 'custom_appBar.dart';
+
 
 class CustomScaffoldWidgetMain extends StatelessWidget {
-  const CustomScaffoldWidgetMain({
+  const CustomScaffoldWidgetMain( {
     Key? key,
     this.child,
   }) : super(key: key);
@@ -12,20 +14,12 @@ class CustomScaffoldWidgetMain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
+      appBar: const CustomAppBar(),
       extendBodyBehindAppBar: true,
       body: Stack(
         children: [
-          Image.asset(
-            'assets/images/psy5.jpg',
-            fit: BoxFit.cover,
-            width: double.infinity,
-            height: double.infinity,
-          ),
           SafeArea(
             child: child!,
           ),
